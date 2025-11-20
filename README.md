@@ -12,6 +12,34 @@ All documentation and methodology are based on the project report included in th
 
 ---
 
+## 📒 Notebooks Overview
+
+### **1️⃣ Object_Detection.ipynb**
+Implements the full YOLOv3 detection workflow:
+
+- Input preprocessing  
+- YOLOv3 forward pass  
+- Decoding predictions (anchors, objectness, class scores)  
+- Non-max suppression (NMS)  
+- Bounding box visualization  
+- Side-by-side comparison between predicted and ground-truth boxes  
+
+This notebook also prepares all the steps required for IoU and mAP evaluation.  
+
+### **2️⃣ Semantic_Segmentation.ipynb**
+Implements an encoder–decoder architecture with **six skip connections**, allowing fine-detail recovery during upsampling. :contentReference[oaicite:0]{index=0}  
+Includes:
+
+- Encoder blocks  
+- Decoder blocks  
+- Skip connection concatenations  
+- Improved reconstruction of fine image features  
+- Visualizations of segmentation output  
+
+This architecture is inspired by U-Net style models and is optimized for dense prediction tasks.
+
+---
+
 ## 🚀 Project Overview
 
 This project enhances YOLOv3 by integrating additional **encoder–decoder skip connections**, improving the recovery of fine spatial details during upsampling. Feature maps from encoder layers are concatenated with decoder layers of matching spatial resolution, allowing the model to reconstruct more precise object boundaries. :contentReference[oaicite:2]{index=2}
