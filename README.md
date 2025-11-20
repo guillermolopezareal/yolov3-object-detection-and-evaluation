@@ -112,3 +112,15 @@ With both predicted and ground-truth boxes available, the project computes:
 Although the final numerical mAP values were not perfect, the evaluation logic is structured correctly and very close to a full implementation. :contentReference[oaicite:6]{index=6}
 
 ---
+
+
+### 📊 Example Visualizations
+
+#### Semantic Segmentation
+![results](results/semantic-segmentation.png)
+
+#### Ground Truth Coordinates
+![results](results/ground-truth-coordinates.png)
+
+#### Non-Maximal-Supression IOU
+![results](results/non-maximal-supression-IOU.png)
